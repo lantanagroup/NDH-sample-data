@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/network_factory'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/network_factory'
 
 RSpec.describe PDEX::NetworkFactory do
   let(:network) do

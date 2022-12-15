@@ -1,13 +1,13 @@
 require 'httparty'
 require 'pry'
 
-require_relative 'lib/pdex'
-require_relative 'lib/pdex/nppes_network'
-require_relative 'lib/pdex/nppes_organization'
-require_relative 'lib/pdex/nppes_managing_org'
-require_relative 'lib/pdex/nppes_practitioner'
-require_relative 'lib/pdex/pharmacy_data'
-require_relative 'lib/pdex/utils/lat_long'
+require_relative 'lib/ndh'
+require_relative 'lib/ndh/nppes_network'
+require_relative 'lib/ndh/nppes_organization'
+require_relative 'lib/ndh/nppes_managing_org'
+require_relative 'lib/ndh/nppes_practitioner'
+require_relative 'lib/ndh/pharmacy_data'
+require_relative 'lib/ndh/utils/lat_long'
 
 data_dir = 'sample-data'
 
@@ -89,4 +89,4 @@ lat_long = data.map(&:address).each_with_object({}) do |address, addresses|
   addresses[key] = coords if coords
 end
 
-File.open('lib/pdex/utils/lat_long.rb', 'w') { |file| file.puts lat_long }
+File.open('lib/ndh/utils/lat_long.rb', 'w') { |file| file.puts lat_long }

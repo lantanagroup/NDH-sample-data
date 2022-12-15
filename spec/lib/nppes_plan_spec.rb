@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/nppes_managing_org'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/nppes_managing_org'
 require 'csv'
 
 RSpec.describe PDEX::NPPESManagingOrg do

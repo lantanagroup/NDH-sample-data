@@ -1,6 +1,6 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/location_factory'
-require_relative '../../lib/pdex/utils/nucc_codes'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/location_factory'
+require_relative '../../lib/ndh/utils/nucc_codes'
 
 RSpec.describe PDEX::LocationFactory do
   let(:nppes_data) do

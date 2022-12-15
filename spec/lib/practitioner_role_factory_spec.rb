@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/practitioner_role_factory'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/practitioner_role_factory'
 
 RSpec.describe PDEX::PractitionerRoleFactory do
   let(:nppes_practitioner) do

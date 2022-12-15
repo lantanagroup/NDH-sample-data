@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/pharmacy_data'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/pharmacy_data'
 require 'csv'
 
 RSpec.describe PDEX::PharmacyData do

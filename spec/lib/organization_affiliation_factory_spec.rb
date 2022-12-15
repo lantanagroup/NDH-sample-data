@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/organization_affiliation_factory'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/organization_affiliation_factory'
 
 RSpec.describe PDEX::OrganizationAffiliationFactory do
   let(:organization) do

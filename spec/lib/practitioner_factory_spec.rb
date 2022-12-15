@@ -1,6 +1,6 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/practitioner_factory'
-require_relative '../../lib/pdex/utils/nucc_codes'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/practitioner_factory'
+require_relative '../../lib/ndh/utils/nucc_codes'
 
 RSpec.describe PDEX::PractitionerFactory do
   let(:nppes_practitioner) do

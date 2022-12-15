@@ -1,4 +1,4 @@
-require_relative '../../lib/pdex/healthcare_service_factory'
+require_relative '../../lib/ndh/healthcare_service_factory'
 
 RSpec.describe PDEX::HealthcareServiceFactory do
   let(:organization) do

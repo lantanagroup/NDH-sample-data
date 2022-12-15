@@ -1,4 +1,4 @@
-# Da Vinci Plan-Net Resources
+# ONE FAST National Directory Resources
 
 This project uses freely available NPPES data to create FHIR resources based on the proposed
 NDH IG.
@@ -45,7 +45,7 @@ This Ruby package was inspired by the Python [VhDir sample generation code](http
 
 ## License
 
-Copyright 2020 The MITRE Corporation
+Originally developed in 2020 by The MITRE Corporation. Edited in 2022 by Lantana Consulting Group.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

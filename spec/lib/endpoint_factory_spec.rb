@@ -1,4 +1,4 @@
-require_relative '../../lib/pdex/endpoint_factory'
+require_relative '../../lib/ndh/endpoint_factory'
 
 RSpec.describe PDEX::EndpointFactory do
   let(:factory) { described_class.new(source_data, resource_type) }

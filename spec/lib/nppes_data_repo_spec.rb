@@ -1,4 +1,4 @@
-require_relative '../../lib/pdex/nppes_data_repo.rb'
+require_relative '../../lib/ndh/nppes_data_repo.rb'
 
 RSpec.describe PDEX::NPPESDataRepo do
   let(:ma_data) { OpenStruct.new(address: OpenStruct.new(state: 'MA')) }

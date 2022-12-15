@@ -1,5 +1,5 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/nppes_network'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/nppes_network'
 require 'csv'
 
 RSpec.describe PDEX::NPPESNetwork do

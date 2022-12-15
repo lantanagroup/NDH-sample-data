@@ -1,6 +1,6 @@
-require_relative '../../lib/pdex'
-require_relative '../../lib/pdex/insurance_plan_factory'
-require_relative '../../lib/pdex/utils/nucc_codes'
+require_relative '../../lib/ndh'
+require_relative '../../lib/ndh/insurance_plan_factory'
+require_relative '../../lib/ndh/utils/nucc_codes'
 
 RSpec.describe PDEX::InsurancePlanFactory do
   let(:plan) do

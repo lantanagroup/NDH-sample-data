@@ -1,7 +1,7 @@
 require 'csv'
 require 'pry'
-require_relative 'lib/pdex'
+require_relative 'lib/ndh'
 
-PDEX::NPPESDataLoader.load
+NDH::NPPESDataLoader.load
 
-PDEX::FHIRGenerator.generate
+NDH::FHIRGenerator.generate
