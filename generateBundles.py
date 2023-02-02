@@ -6,12 +6,14 @@ import getopt
 exampleFolderLocation = r""
 outputLocation = r""
 baseUrl = ""
+recursive = False
+httpVerb = ""
 
-arg_help = "{0} -f <folder> -u <url> -o <output>".format(sys.argv[0])
+arg_help = "{0} -f <folder> -u <url> -o <output> -r <recursive> -v <verb>".format(sys.argv[0])
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "hf:u:o:", ["help", "folder=",
-                                                     "url=", "output="])
+    opts, args = getopt.getopt(sys.argv[1:], "hf:u:o:r:v:", ["help", "folder=",
+                                                     "url=", "output=", "recursive=, verb="])
 except:
     print(arg_help)
     sys.exit(2)
@@ -26,6 +28,10 @@ for opt, arg in opts:
         baseUrl = arg
     elif opt in ("-o", "--output"):
         outputLocation = arg
+    elif opt in ("-r", "--recursive"):
+        recursive = bool(arg)
+    elif opt in ("-v", "--verb"):
+            httpVerb = opt
 
 if not outputLocation:
     outputLocation = os.getcwd()
@@ -36,6 +42,9 @@ if not baseUrl:
 if not exampleFolderLocation:
     print("Need to provide a directory with sample data")
     sys.exit(2)
+
+if not httpVerb:
+    httpVerb = "PUT"
 
 #build entry list and returns list
 
